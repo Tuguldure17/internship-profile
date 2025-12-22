@@ -205,8 +205,7 @@ p {
 .about .box .text h4 {
     text-transform: uppercase;
     color: #21518d;
-    font: size 16px;
-    ;
+    font-size: 13px;
 }
 
 .skills .box {
@@ -269,4 +268,26 @@ p {
 .work-scroll-content::-webkit-scrollbar-thumb {
     background: #1e5fa3;
     border-radius: 10px;
+}
+
+.grade-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    margin-top: 8px;
+    padding: 8px 18px;
+    background: linear-gradient(135deg, #10627e, #2f7ab4);
+    color: #adaaaa;
+    font-size: 0.9em;
+    font-weight: 500;
+    text-decoration: none;
+    border-radius: 6px;
+    box-shadow: 0 6px 15px rgba(73, 104, 151, 0.35);
+    transition: all 0.3s ease;
+}
+
+.grade-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 22px rgba(30, 79, 154, 0.45);
+    background: linear-gradient(135deg, #163c75, #25639a);
 }
