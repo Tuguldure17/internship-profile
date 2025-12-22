@@ -8,24 +8,20 @@
 }
 
 body {
-    background-color: rgb(146, 146, 146);
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    background-color: #192f39;
+
     min-height: 100vh;
 }
 
 .container {
-    position: relative;
     width: 100%;
     max-width: 1500px;
-    min-height: 1000px;
-    margin: 10px;
-    background-color: #fff;
+    min-height: 100vh;
+    margin: 0 auto;
+    background: #fff;
     display: grid;
     grid-template-columns: 1fr 2fr;
-    box-shadow: 0 35px 55px rgba(0, 0, 0, 0.1);
-    border: 1px solid rgba(3, 3, 3, 0.2);
+    box-shadow: 0 35px 55px rgba(0, 0, 0, 0.15);
 }
 
 
@@ -82,10 +78,11 @@ body {
 
 .contactinfo {
     padding-top: 30px;
+    color: #fff;
 }
 
 .title {
-    color: #fdfdfd;
+    color: #ffffff;
     text-transform: uppercase;
     font-weight: 600;
     letter-spacing: 1px;
@@ -166,14 +163,15 @@ body {
     background: #fff;
     padding: 40px;
     border: 2px solid #52528a;
+    overflow-y: auto;
 }
 
 .about {
-    margin: bottom 50px;
+    margin: bottom 20px;
 }
 
 .about:last-child {
-    margin-bottom: 0;
+    margin-bottom: 23px;
 }
 
 .title2 {
@@ -181,6 +179,7 @@ body {
     text-transform: uppercase;
     letter-spacing: 1px;
     margin-bottom: 10px;
+    margin-left: 1px;
 }
 
 p {
@@ -250,4 +249,24 @@ p {
     color: #333;
     font-weight: 500;
     margin: 10px 0;
+}
+
+.work-scroll {
+    max-height: 420px;
+    overflow: hidden;
+}
+
+.work-scroll-content {
+    max-height: 350px;
+    overflow-y: auto;
+    padding-right: 10px;
+}
+
+.work-scroll-content::-webkit-scrollbar {
+    width: 6px;
+}
+
+.work-scroll-content::-webkit-scrollbar-thumb {
+    background: #1e5fa3;
+    border-radius: 10px;
 }
