@@ -1,386 +1,464 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="mn">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tuugy CV</title>
+    <title>Энхбаяр Төгөлдөр - CV</title>
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
-    <div class="container">
+    <div class="page-wrapper">
+        <div class="cv-container">
 
-        <div class="left_Side">
-            <div class="profileText">
-                <div class="imgBx">
-                    <img src="img/tseej.jpg" alt="">
-                </div>
-                <h2>Энхбаяр Төгөлдөр <br><span>Программ хангамж</span></h2>
-            </div>
-            <!-- CONTACT INFO -->
-            <div class="contactinfo">
-                <h3 class="title">Холбоо барих</h3>
-                <ul>
-                    <li><i class="fa-solid fa-phone"></i> +976 86706661</li>
-                    <li><i class="fa-solid fa-envelope"></i> tuugiienkhbayr@gmail.com</li>
-                    <li><i class="fa-solid fa-envelope"></i> 22b1num7303@stud.num.edu.mn</li>
-
-                    <li>
-                        <i class="fa-brands fa-github"></i>
-                        <a href="https://github.com/Tuguldure17" class="github-link">GitHub profile</a>
-                    </li>
-
-                    <li>
-                        <i class="fa-brands fa-instagram"></i>
-                        <a href="https://www.instagram.com/_enkhtuguldur_?igsh=MXhrNDE2ZW9paHowdQ%3D%3D&utm_source=qr"
-                            class="github-link">Instagram</a>
-                    </li>
-
-                    <li>
-                        <i class="fa-brands fa-facebook"></i>
-                        <a href="https://www.facebook.com/share/17onGjiU1k/?mibextid=wwXIfr"
-                            class="github-link">Facebook</a>
-                    </li>
-
-                    <li><i class="fa-solid fa-location-dot"></i> Монгол, МУИС</li>
-                </ul>
-            </div>
-
-
-
-
-            <div class="contactinfo education">
-                <h3 class="title">Боловсрол</h3>
-                <ul>
-                    <li>
-                        <h5>2010–2022</h5>
-                        <h4>Хэнтий аймаг Хэрлэн Нэгдүгээр Сургууль</h4> <BR></BR>
-                        <h5>2022–2026</h5>
-                        <h4>Монгол Улсын Их Сургууль – Программ хангамж чиглэлээр суралцаж байгаа</h4>
-                        <h4>4 жилийн 120 кредитийн тэтгэлэг</h4>
-                    </li>
-                </ul>
-            </div>
-        </div>
-
-        <div class="right_Side">
-
-            <div class="about">
-                <h2 class="title2">ӨӨРИЙН ТУХАЙ</h2>
-                <p>
-                    Би МУИС-ийн Программ хангамжийн чиглэлээр суралцдаг оюутан бөгөөд
-                    программ хангамж Front-end, Back-end чиглэлээр дадлага (internship) хийх газар, боломж хайж байна.
-                    <br>
-                    Мэргэжлийн хичээлүүдээ ихэнхийн амжилттай үзсэн.
-                </p>
-            </div>
-
-            <div class="about">
-                <h2 class="title2">ДАВУУ ТАЛ</h2>
-                <ul class="strengths">
-                    <li>GitHub ашиглан бага хэмжээний төслүүдийг хамтран хөгжүүлсэн.</li>
-                    <li>Багаар ажиллах чадвартай</li>
-                    <li>Хариуцлагатай</li>
-                    <li>Цаг баримталдаг</li>
-                    <li>Бие даан суралцах чадвартай</li>
-                    <li>Воллейболлын 1-р зэрэгтэй</li>
-
-                </ul>
-            </div>
-
-            <div class="about work-scroll">
-                <h2 class="title2">СУРАЛЦАХ ЯВЦАД ҮЗСЭН ХИЧЭЭЛ ЭЗЭМШСЭН ТУРШЛАГА</h2>
-
-                <div class="work-scroll-content">
-
-                    <div class="box">
-                        <div class="year_company">
-                            <h5>ДҮНГИЙН <br>ТОДОРХОЙЛОЛТ</h5>
-                        </div>
-                        <div class="text">
-                            <h4>2022-­2023, Намараас 2024-­2025, Хавар хүртэл үзсэн хичээлийн дүн</h4>
-                            <a href="./index_dun.html" class="grade-btn">Дүнгийн тодорхойлолт харах</a>
+            <!-- LEFT SIDEBAR -->
+            <aside class="sidebar">
+                <div class="profile-section">
+                    <div class="profile-image-wrapper">
+                        <div class="image-frame">
+                            <img src="img/tseej.jpg" alt="Энхбаяр Төгөлдөр">
+                            <div class="image-overlay"></div>
                         </div>
                     </div>
-
-                    <div class="box">
-                        <div class="year_company">
-                            <h5>2022–2026 Он</h5>
-                        </div>
-                        <div class="text">
-                            <h4>ҮЗСЭН МЭРГЭЖЛИЙН ХИЧЭЭЛҮҮДИЙН МЭДЭЭЛЭЛ</h4>
-
-                            <ul class="strengths">
-                                <li>ICSI201 Объект хандлагат программчлал - М.Золжаргал багш</li>
-                                <li>ICSI202 Өгөгдлийн бүтэц - Б.Магсаржав багш</li>
-                                <li>ICSI311 Өгөгдлийн сангийн систем - Б.Аззаяа багш</li>
-                                <li>CSII202 Өгөгдлийн сангийн үндэс - Н.Оюун-Эрдэнэ багш</li>
-                                <li>ICSI401 Мобайл Төхөөрөмжийн программ хөгжүүлэлт - Н.Даваасүрэн багш</li>
-                                <li>ICSI334 Компьютерын зохион байгуулалт, архитектур - А.Баатарбилэг багш</li>
-                                <li>ICSI304 Программ хангамжийн зохиомж ба архитектур - Н.Мөнхцэцэг багш</li>
-                                <li>ICSI438 Программ хангамжийн төслийн баримт бичиг - Б.Батням багш</li>
-                                <li>ICSI438 Программ хангамжийн төслийн баримт бичиг - T.Цэрэннадмид багш</li>
-                                <li>ECEN213 Компьютерын сүлжээ - Б.Баттулга багш</li>
-                                <li>ICSI430 Хиймэл оюун ухаан - Ш.Бат-Өлзий багш</li>
-                                <li>ICSI251 Компьютерын системийн зарчим 1 - Г.Гантулга багш</li>
-                                <li>ICSI214 Программ хангамжийн инженерчлэлийн үндэс - Ц.Лхамролом багш</li>
-                                <li>ICSI303 Программ хангамжийн шаардлагын шинжилгээ - Ц.Лхамролом багш</li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <div class="box">
-                        <div class="year_company">
-                            <h5>2022–2026 Он</h5>
-                        </div>
-
-                        <div class="text">
-                            <h4>Лабораторийн хүрээнд хийж гүйцэтгэсэн ажлууд</h4>
-
-                            <ol class="lab-list">
-
-                                <li>
-                                    ICSI401 Мобайл Төхөөрөмжийн программ хөгжүүлэлтийн хүрээнд: <br>
-
-                                    <ul class="sub-list">
-                                        <li>
-                                            Cэдэв: Бүрэн ажилгаатай TaskScheduler Аппликейшн
-                                            <br>
-                                            GitHub: <a href="https://github.com/Tuguldure17/Mobile-Task"> Төсөлийн
-                                                Github
-                                                холбоос</a> <br>
-
-                                            Andriod Studio ашиглан Kotlin хэл дээр багшийн өгсөн ui дагуу дэлгэцүүдээ
-                                            xml дээр бичиж мөн Back-end давхар бичсэн.
-                                            <br>
-
-                                            Andriod үйлдлийн системийг дэмжиж ажилдаг. <br>
-                                        </li>
-
-                                        <li>
-                                            Cэдэв: Мобайл апп - Орлого, зарлагын бүртгэл
-                                            <br>
-                                            GitHub: <a href="https://github.com/Tuguldure17/bank-app"> Төсөлийн
-                                                Github
-                                                холбоос</a> <br>
-                                            Visual Studio ашиглан Dart, Flutter framework ашиглан мобайл аппликейшн
-                                            хөгжүүлсэн. <br>
-
-                                            Firebase ашиглан өгөгдлийн сан хадгалж, хэрэглэгчийн мэдээллийг бүртгэсэн.
-                                            <br>
-                                        </li>
-                                    </ul>
-                                </li>
-
-                                <li>
-                                    ICSI201 Объект хандлагат программчлал хичээлийн хувьд
-                                    <br>
-
-                                    <ul class="sub-list">
-                                        <li>
-                                            Cэдэв: Лаборатори-9 Удамшил ба объект хоорондын харьцаа (Inheritance,
-                                            Aggregation,
-                                            Composition)
-                                            <br>
-                                            GitHub: <a href="https://github.com/Tuguldure17/object-lab9"> Төсөлийн
-                                                Github
-                                                холбоос</a> <br>
-
-                                            C++ хэл дээр объект хандлагат программчлалын үндсэн ойлголтуудыг бодит
-                                            жишээгээр
-                                            хэрэгжүүлсэн. <br>
-
-                                            Class диаграмм боловсруулж, классуудын хоорондын inheritance, aggregation,
-                                            composition харьцааг зөв загварчилсан. <br>
-
-                                            Employee, Person, Spouse, Child, Division, JobDescription зэрэг классуудыг
-                                            тодорхойлж, объектуудын уялдаа холбоог кодоор хэрэгжүүлсэн. <br>
-
-                                            Файлаас өгөгдөл уншиж (ifstream), олон объект үүсгэн өгөгдөл удирдах логик
-                                            боловсруулсан. <br>
-
-                                            Багаар ажиллаж, Git/GitHub ашиглан хамтын хөгжүүлэлт, merge conflict
-                                            шийдвэрлэх
-                                            туршлага хуримтлуулсан. <br>
-
-                                            Кодын бүтэц, логик холбоо, объектын амьдралын мөчлөгийг (object lifecycle)
-                                            ойлгож
-                                            хэрэгжүүлсэн. <br>
-                                        </li>
-
-                                        <li>
-                                            Cэдэв: Лаборатори-10 Загвар класс (Template), давхар холбоост жагсаалт
-                                            (Doubly Linked
-                                            List)
-                                            <br>
-                                            GitHub: <a href="https://github.com/Tuguldure17/object-lab10"> Төсөлийн
-                                                Github
-                                                холбоос</a> <br>
-
-                                            C++ хэл дээр template класс ашиглан төрөл бүрийн өгөгдөл хадгалах давхар
-                                            холбоост жагсаалт (linked list)-ыг өөрийн гараар хэрэгжүүлсэн. <br>
-
-                                            Жагсаалтын үндсэн үйлдлүүд болох add, insert, get, delete, length функцуудыг
-                                            загвар класст тодорхойлон хэрэгжүүлсэн. <br>
-
-                                            Node, linkedList&lt;T&gt; зэрэг классуудыг ашиглан өгөгдлийн бүтэц, заагч
-                                            (pointer), санах ойн удирдлагыг бодитоор хэрэгжүүлсэн. <br>
-
-                                            Shape, TwoDShape, Square, Circle, Triangle зэрэг классуудыг ашиглан
-                                            полиморфизм, inheritance, abstract class ойлголтуудыг хэрэглэсэн. <br>
-
-                                            Дүрсүүдийг талбай болон периметрийн утгаар эрэмбэлэх (sorting) логик
-                                            боловсруулсан. <br>
-
-                                            Багаар ажиллаж, Git/GitHub ашиглан хамтын хөгжүүлэлт, merge conflict
-                                            шийдвэрлэх туршлага олж авсан. <br>
-                                        </li>
-                                    </ul>
-                                </li>
-
-                                <li>
-                                    ICSI202 Өгөгдлийн бүтэц хичээлийн хүрээнд
-                                    <br>
-
-                                    <ul class="sub-list">
-                                        <li>
-                                            Сэдэв: Шугаман өгөгдлийн бүтэц (Array, Linked List, Stack, Queue)
-                                            <br>
-                                            GitHub: <a
-                                                href="https://github.com/dics-seas-num/7-red-black-tree-Tuguldure17">Төслийн
-                                                GitHub холбоос</a>
-                                            <br>
-
-                                            C/C++ хэл дээр массив, нэг болон давхар холбоост жагсаалт (singly/doubly
-                                            linked list),
-                                            стек (stack), дараалал (queue) зэрэг шугаман өгөгдлийн бүтцийг хэрэгжүүлсэн.
-                                            <br>
-
-                                            Өгөгдөл нэмэх, устгах, хайх, урт тодорхойлох зэрэг үндсэн алгоритмуудыг
-                                            pointer ашиглан бодитоор хэрэгжүүлсэн. <br>
-
-                                            Санах ойн динамик хуваарилалт (malloc/new, free/delete) ашиглаж,
-                                            санах ойн алдаа (memory leak)-аас сэргийлэх дадал эзэмшсэн. <br>
-
-                                            Алгоритмын гүйцэтгэлийн хугацаа (time complexity) болон санах ойн ашиглалтын
-                                            ялгааг харьцуулан шинжилсэн. <br>
-                                        </li>
-
-                                        <li>
-                                            Сэдэв: Мод ба эрэмбэлэх алгоритмууд (Tree, Search & Sorting)
-                                            <br>
-
-                                            Binary Tree, Binary Search Tree (BST) бүтэц дээр өгөгдөл оруулах,
-                                            хайх, устгах алгоритмуудыг хэрэгжүүлсэн. <br>
-
-                                            Bubble Sort, Selection Sort, Insertion Sort, Merge Sort зэрэг
-                                            эрэмбэлэх алгоритмуудын логикийг хэрэгжүүлж, гүйцэтгэлийг харьцуулсан. <br>
-
-                                            Алгоритмын онолын ойлголт (Big-O notation)-ыг практик кодтой уялдуулан
-                                            ашигласан. <br>
-
-                                            Багаар ажиллаж, Git/GitHub ашиглан кодын хувилбарын хяналт (version
-                                            control),
-                                            хамтын хөгжүүлэлтийн туршлага хуримтлуулсан. <br>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li>
-                                    CSII203 Интернэт технологийн үндэс хичээлийн хүрээнд: <br>
-
-                                    <ul class="sub-list">
-                                        <li>
-                                            Cэдэв: Лабораторийн ажилууд
-                                            <br>
-                                            GitHub: <a href="https://github.com/Tuguldure17/Tuguldure17"> Төсөлийн
-                                                Github
-                                                холбоос</a> <br>
-
-                                            HTML, CSS ашиглан вэб хуудас бүтээх үндсэн ойлголтуудыг дадлагаар
-                                            эзэмшсэн. <br>
-                                        </li>
-                                    </ul>
-                                </li>
-
-                            </ol>
-                        </div>
-                    </div>
-
-                    <div class="box">
-                        <div class="year_company">
-                            <h5>2025–2026 Он</h5>
-                        </div>
-                        <div class="text">
-                            <h4>Натур Бакс Воллейболлын Сургалт</h4>
-                            <p>Натур Бакс Воллейболлын Сургалтын төвд бүртгэл, төлбөр тооцоо хариуцан ажиллаж байгаа.
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="box">
-                        <div class="year_company">
-                            <h5>2023–2025</h5>
-                        </div>
-                        <div class="text">
-                            <h4>TOKTOK DELIVERY</h4>
-                            <p>Хүргэлтийн ажилтан хийж байсан. (Нэмэлт орлого)</p>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-
-
-            <div class="about skills">
-                <h2 class="title2">ЭЗЭМШСЭН ПРОГРАММЫН ХЭЛҮҮД</h2>
-
-                <div class="box">
-                    <h4>HTML</h4>
-                    <div class="percent">
-                        <div style="width:50%;"></div>
+                    <div class="profile-info">
+                        <h1 class="profile-name">Энхбаяр Төгөлдөр</h1>
+                        <p class="profile-title">Программ хангамж</p>
+                        <div class="profile-decoration"></div>
                     </div>
                 </div>
-                <div class="box">
-                    <h4>CSS</h4>
-                    <div class="percent">
-                        <div style="width:34%;"></div>
-                    </div>
-                </div>
-                <div class="box">
-                    <h4>C++</h4>
-                    <div class="percent">
-                        <div style="width:54%;"></div>
-                    </div>
-                </div>
-                <div class="box">
-                    <h4>C</h4>
-                    <div class="percent">
-                        <div style="width:60%;"></div>
-                    </div>
-                </div>
-                <div class="box">
-                    <h4>Python</h4>
-                    <div class="percent">
-                        <div style="width:25%;"></div>
-                    </div>
-                </div>
-            </div>
 
-            <div class="about hobby">
-                <h2 class="title2">СОНИРХОДОГ СПОРТУУД</h2>
-                <ul>
-                    <li><i class="fa-solid fa-basketball"></i> Сагсан бөмбөг</li>
-                    <li><i class="fa-solid fa-volleyball"></i> Воллейбол</li>
-                    <li><i class="fa-solid fa-futbol"></i> Хөлбөмбөг</li>
-                    <li><i class="fa-solid fa-table-tennis"></i> Теннис</li>
-                    <li><i class="fa-solid fa-gamepad"></i> CS2</li>
-                    <li><i class="fa-solid fa-person-biking"></i> Уулын дугуй</li>
-                </ul>
-            </div>
+                <!-- CONTACT -->
+                <div class="info-block">
+                    <h3 class="block-title">
+                        <span class="title-icon"><i class="fa-solid fa-address-book"></i></span>
+                        Холбоо барих
+                    </h3>
+                    <ul class="contact-list">
+                        <li class="contact-item">
+                            <i class="fa-solid fa-phone"></i>
+                            <span>+976 86706661</span>
+                        </li>
+                        <li class="contact-item">
+                            <i class="fa-solid fa-envelope"></i>
+                            <span><a href="/cdn-cgi/l/email-protection" class="__cf_email__"
+                                    data-cfemail="aadedfdfcdc3c3cfc4c1c2c8cbd3d8eacdc7cbc3c684c9c5c7">[email&#160;protected]</a></span>
+                        </li>
+                        <li class="contact-item">
+                            <i class="fa-solid fa-envelope"></i>
+                            <span><a href="/cdn-cgi/l/email-protection" class="__cf_email__"
+                                    data-cfemail="5c6e6e3e6d3229316b6f6c6f1c2f2829387232293172393829723132">[email&#160;protected]</a></span>
+                        </li>
+                        <li class="contact-item">
+                            <i class="fa-brands fa-github"></i>
+                            <a href="https://github.com/Tuguldure17" target="_blank" rel="noopener">GitHub profile</a>
+                        </li>
+                        <li class="contact-item">
+                            <i class="fa-brands fa-instagram"></i>
+                            <a href="https://www.instagram.com/_enkhtuguldur_?igsh=MXhrNDE2ZW9paHowdQ%3D%3D&utm_source=qr"
+                                target="_blank" rel="noopener">Instagram</a>
+                        </li>
+                        <li class="contact-item">
+                            <i class="fa-brands fa-facebook"></i>
+                            <a href="https://www.facebook.com/share/17onGjiU1k/?mibextid=wwXIfr" target="_blank"
+                                rel="noopener">Facebook</a>
+                        </li>
+                        <li class="contact-item">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <span>Монгол, МУИС</span>
+                        </li>
+                    </ul>
+                </div>
 
+                <!-- EDUCATION -->
+                <div class="info-block">
+                    <h3 class="block-title">
+                        <span class="title-icon"><i class="fa-solid fa-graduation-cap"></i></span>
+                        Боловсрол
+                    </h3>
+                    <div class="education-timeline">
+                        <div class="education-item">
+                            <div class="edu-period">2010–2022</div>
+                            <div class="edu-school">Хэнтий аймаг Хэрлэн Нэгдүгээр Сургууль</div>
+                        </div>
+                        <div class="education-item">
+                            <div class="edu-period">2022–2026</div>
+                            <div class="edu-school">Монгол Улсын Их Сургууль</div>
+                            <div class="edu-detail">Программ хангамж чиглэлээр суралцаж байгаа</div>
+                            <div class="edu-scholarship">
+                                <i class="fa-solid fa-award"></i>
+                                4 жилийн 120 кредитийн тэтгэлэг
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PROGRAMMING LANGUAGES -->
+                <div class="info-block">
+                    <h3 class="block-title">
+                        <span class="title-icon"><i class="fa-solid fa-code"></i></span>
+                        Программын хэлүүд
+                    </h3>
+                    <div class="skills-grid">
+                        <div class="skill-card">
+                            <div class="skill-header">
+                                <span class="skill-name">C</span>
+                                <span class="skill-level">89%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-fill" style="--skill-width: 89%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-header">
+                                <span class="skill-name">C++</span>
+                                <span class="skill-level">86%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-fill" style="--skill-width: 86%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-header">
+                                <span class="skill-name">HTML</span>
+                                <span class="skill-level">85%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-fill" style="--skill-width: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-header">
+                                <span class="skill-name">CSS</span>
+                                <span class="skill-level">80%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-fill" style="--skill-width: 80%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-header">
+                                <span class="skill-name">Python</span>
+                                <span class="skill-level">67%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-fill" style="--skill-width: 67%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </aside>
+
+            <!-- MAIN CONTENT -->
+            <main class="main-content">
+
+                <!-- ABOUT -->
+                <section class="content-section fade-in">
+                    <h2 class="section-title">
+                        <span class="title-text">Өөрийн тухай</span>
+                        <div class="title-line"></div>
+                    </h2>
+                    <div class="about-text">
+                        <p>Би МУИС-ийн Программ хангамжийн чиглэлээр суралцдаг оюутан бөгөөд программ хангамж Front-end,
+                            Back-end чиглэлээр дадлага (internship) хийх газар, боломж хайж байна.</p>
+                        <p>Мэргэжлийн хичээлүүдээ ихэнхийн амжилттай үзсэн.</p>
+                    </div>
+                </section>
+
+                <!-- STRENGTHS -->
+                <section class="content-section fade-in">
+                    <h2 class="section-title">
+                        <span class="title-text">Давуу тал</span>
+                        <div class="title-line"></div>
+                    </h2>
+                    <div class="strengths-grid">
+                        <div class="strength-card">
+                            <div class="strength-icon"><i class="fa-brands fa-github"></i></div>
+                            <p>GitHub ашиглан бага хэмжээний төслүүдийг хамтран хөгжүүлсэн</p>
+                        </div>
+                        <div class="strength-card">
+                            <div class="strength-icon"><i class="fa-solid fa-users"></i></div>
+                            <p>Багаар ажиллах чадвартай</p>
+                        </div>
+                        <div class="strength-card">
+                            <div class="strength-icon"><i class="fa-solid fa-handshake"></i></div>
+                            <p>Хариуцлагатай</p>
+                        </div>
+                        <div class="strength-card">
+                            <div class="strength-icon"><i class="fa-solid fa-clock"></i></div>
+                            <p>Цаг баримталдаг</p>
+                        </div>
+                        <div class="strength-card">
+                            <div class="strength-icon"><i class="fa-solid fa-brain"></i></div>
+                            <p>Бие даан суралцах чадвартай</p>
+                        </div>
+                        <div class="strength-card">
+                            <div class="strength-icon"><i class="fa-solid fa-trophy"></i></div>
+                            <p>Воллейболлын 1-р зэрэгтэй</p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- ACADEMIC WORK -->
+                <section class="content-section fade-in">
+                    <h2 class="section-title">
+                        <span class="title-text">Суралцах явцад үзсэн хичээл эзэмшсэн туршлага</span>
+                        <div class="title-line"></div>
+                    </h2>
+
+                    <!-- GRADES -->
+                    <div class="work-card grade-card">
+
+                        <h3 class="work-title">Дүнгийн тодорхойлолт</h3>
+                        <p class="work-period">2022-2023 Намараас 2024-2025 Хавар хүртэл үзсэн хичээлийн дүн</p>
+                        <a href="./index_dun.html" class="modern-btn">
+                            <span>Дүн харах</span>
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+
+                    <!-- COURSES -->
+                    <div class="work-card">
+                        <div class="card-badge">Мэргэжлийн хичээл</div>
+                        <h3 class="work-title">Үзсэн мэргэжлийн хичээлүүд</h3>
+                        <p class="work-period">2022–2026</p>
+                        <div class="courses-categories">
+                            <div class="category-item">
+                                <div class="category-icon"><i class="fa-solid fa-mobile-screen-button"></i></div>
+                                <div class="category-content">
+                                    <h4>Mobile Development</h4>
+                                    <p>Мобайл төхөөрөмжийн программ хөгжүүлэлт</p>
+                                </div>
+                            </div>
+                            <div class="category-item">
+                                <div class="category-icon"><i class="fa-solid fa-diagram-project"></i></div>
+                                <div class="category-content">
+                                    <h4>Data Structures & Algorithms</h4>
+                                    <p>Өгөгдлийн бүтэц, Объект хандлагат программчлал</p>
+                                </div>
+                            </div>
+                            <div class="category-item">
+                                <div class="category-icon"><i class="fa-solid fa-database"></i></div>
+                                <div class="category-content">
+                                    <h4>Database Systems</h4>
+                                    <p>Өгөгдлийн сангийн систем, үндэс</p>
+                                </div>
+                            </div>
+                            <div class="category-item">
+                                <div class="category-icon"><i class="fa-solid fa-laptop-code"></i></div>
+                                <div class="category-content">
+                                    <h4>Software Engineering</h4>
+                                    <p>Программ хангамжийн зохиомж, архитектур, инженерчлэл, шаардлагын шинжилгээ,
+                                        баримт бичиг</p>
+                                </div>
+                            </div>
+                            <div class="category-item">
+                                <div class="category-icon"><i class="fa-solid fa-microchip"></i></div>
+                                <div class="category-content">
+                                    <h4>Computer Systems</h4>
+                                    <p>Компьютерын зохион байгуулалт, архитектур, системийн зарчим</p>
+                                </div>
+                            </div>
+                            <div class="category-item">
+                                <div class="category-icon"><i class="fa-solid fa-network-wired"></i></div>
+                                <div class="category-content">
+                                    <h4>Networks & AI</h4>
+                                    <p>Компьютерын сүлжээ, Хиймэл оюун ухаан</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- LAB WORK -->
+                    <div class="work-card">
+                        <div class="card-badge">Лабораторийн ажил</div>
+                        <h3 class="work-title">Лабораторийн хүрээнд гүйцэтгэсэн ажлууд</h3>
+                        <p class="work-period">2022–2026</p>
+
+                        <div class="lab-section">
+                            <h4 class="lab-course">
+                                <i class="fa-solid fa-mobile-screen"></i>
+                                ICSI401 Мобайл төхөөрөмжийн программ хөгжүүлэлт
+                            </h4>
+
+                            <div class="project-card">
+                                <div class="project-header">
+                                    <h5 class="project-title">TaskScheduler Аппликейшн</h5>
+                                    <span class="project-tech">Kotlin • Android</span>
+                                </div>
+                                <p class="project-desc">Android Studio ашиглан Kotlin хэл дээр бүрэн ажилгаатай
+                                    даалгаврын хуваарь бүхий аппликейшн. XML дээр UI бичиж, Back-end давхар бүтээсэн.
+                                </p>
+                                <a href="https://github.com/Tuguldure17/Mobile-Task" target="_blank"
+                                    class="project-link">
+                                    <i class="fa-brands fa-github"></i>
+                                    GitHub төсөл
+                                </a>
+                            </div>
+
+                            <div class="project-card">
+                                <div class="project-header">
+                                    <h5 class="project-title">Орлого зарлагын бүртгэл</h5>
+                                    <span class="project-tech">Flutter • Firebase</span>
+                                </div>
+                                <p class="project-desc">Visual Studio ашиглан Dart, Flutter framework дээр мобайл
+                                    аппликейшн хөгжүүлсэн. Firebase ашиглан өгөгдлийн сан хадгалж, хэрэглэгчийн мэдээлэл
+                                    бүртгэсэн.</p>
+                                <a href="https://github.com/Tuguldure17/bank-app" target="_blank" class="project-link">
+                                    <i class="fa-brands fa-github"></i>
+                                    GitHub төсөл
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="lab-section">
+                            <h4 class="lab-course">
+                                <i class="fa-solid fa-cube"></i>
+                                ICSI201 Объект хандлагат программчлал
+                            </h4>
+
+                            <div class="project-card">
+                                <div class="project-header">
+                                    <h5 class="project-title">Lab-9: Удамшил ба объект хоорондын харьцаа</h5>
+                                    <span class="project-tech">C++</span>
+                                </div>
+                                <p class="project-desc">Inheritance, Aggregation, Composition харьцааг хэрэгжүүлсэн.
+                                    Employee, Person, Division зэрэг классуудыг тодорхойлж, UML диаграмм боловсруулсан.
+                                    Git/GitHub ашиглан багаар ажилласан.</p>
+                                <a href="https://github.com/Tuguldure17/object-lab9" target="_blank"
+                                    class="project-link">
+                                    <i class="fa-brands fa-github"></i>
+                                    GitHub төсөл
+                                </a>
+                            </div>
+
+                            <div class="project-card">
+                                <div class="project-header">
+                                    <h5 class="project-title">Lab-10: Template класс, Doubly Linked List</h5>
+                                    <span class="project-tech">C++</span>
+                                </div>
+                                <p class="project-desc">Template класс ашиглан давхар холбоост жагсаалт хэрэгжүүлсэн.
+                                    Shape, Circle, Triangle зэрэг классуудаар полиморфизм, abstract class ойлголтуудыг
+                                    дадлага болгосон.</p>
+                                <a href="https://github.com/Tuguldure17/object-lab10" target="_blank"
+                                    class="project-link">
+                                    <i class="fa-brands fa-github"></i>
+                                    GitHub төсөл
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="lab-section">
+                            <h4 class="lab-course">
+                                <i class="fa-solid fa-diagram-project"></i>
+                                ICSI202 Өгөгдлийн бүтэц
+                            </h4>
+
+                            <div class="project-card">
+                                <div class="project-header">
+                                    <h5 class="project-title">Шугаман өгөгдлийн бүтэц</h5>
+                                    <span class="project-tech">C/C++</span>
+                                </div>
+                                <p class="project-desc">Array, Linked List, Stack, Queue бүтцүүдийг pointer ашиглан
+                                    хэрэгжүүлсэн. Динамик санах ой удирдах, алгоритмын complexity шинжилгээ хийсэн.</p>
+                                <a href="https://github.com/dics-seas-num/7-red-black-tree-Tuguldure17" target="_blank"
+                                    class="project-link">
+                                    <i class="fa-brands fa-github"></i>
+                                    GitHub төсөл
+                                </a>
+                            </div>
+
+                            <div class="project-card">
+                                <div class="project-header">
+                                    <h5 class="project-title">Мод ба эрэмбэлэх алгоритм</h5>
+                                    <span class="project-tech">C/C++</span>
+                                </div>
+                                <p class="project-desc">Binary Tree, BST бүтэц дээр CRUD үйлдлүүд. Bubble, Selection,
+                                    Insertion, Merge Sort алгоритмуудын гүйцэтгэлийг харьцуулсан.</p>
+                            </div>
+                        </div>
+
+                        <div class="lab-section">
+                            <h4 class="lab-course">
+                                <i class="fa-solid fa-code"></i>
+                                CSII203 Интернэт технологийн үндэс
+                            </h4>
+
+                            <div class="project-card">
+                                <div class="project-header">
+                                    <h5 class="project-title">Лабораторийн ажилууд</h5>
+                                    <span class="project-tech">HTML • CSS</span>
+                                </div>
+                                <p class="project-desc">HTML, CSS ашиглан вэб хуудас бүтээх үндсэн ойлголтуудыг
+                                    дадлагаар эзэмшсэн.</p>
+                                <a href="https://github.com/Tuguldure17/Tuguldure17" target="_blank"
+                                    class="project-link">
+                                    <i class="fa-brands fa-github"></i>
+                                    GitHub төсөл
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- WORK EXPERIENCE -->
+                    <div class="work-card">
+                        <div class="card-badge">Ажлын туршлага</div>
+                        <h3 class="work-title">Натур Бакс Воллейболлын Сургалт</h3>
+                        <p class="work-period">2025–2026</p>
+                        <p class="work-desc">Натур Бакс Воллейболлын Сургалтын төвд бүртгэл, төлбөр тооцоо хариуцан
+                            ажиллаж байгаа.</p>
+                    </div>
+
+                    <div class="work-card">
+                        <div class="card-badge">Хэсэгчилсэн</div>
+                        <h3 class="work-title">TOKTOK DELIVERY</h3>
+                        <p class="work-period">2023–2025</p>
+                        <p class="work-desc">Хүргэлтийн ажилтан (Нэмэлт орлого)</p>
+                    </div>
+                </section>
+
+                <!-- HOBBIES -->
+                <section class="content-section fade-in">
+                    <h2 class="section-title">
+                        <span class="title-text">Сонирходог спортууд</span>
+                        <div class="title-line"></div>
+                    </h2>
+                    <div class="hobbies-grid">
+                        <div class="hobby-card">
+                            <i class="fa-solid fa-basketball"></i>
+                            <span>Сагсан бөмбөг</span>
+                        </div>
+                        <div class="hobby-card">
+                            <i class="fa-solid fa-volleyball"></i>
+                            <span>Воллейбол</span>
+                        </div>
+                        <div class="hobby-card">
+                            <i class="fa-solid fa-futbol"></i>
+                            <span>Хөлбөмбөг</span>
+                        </div>
+                        <div class="hobby-card">
+                            <i class="fa-solid fa-table-tennis"></i>
+                            <span>Теннис</span>
+                        </div>
+                        <div class="hobby-card">
+                            <i class="fa-solid fa-gamepad"></i>
+                            <span>CS2</span>
+                        </div>
+                        <div class="hobby-card">
+                            <i class="fa-solid fa-person-biking"></i>
+                            <span>Уулын дугуй</span>
+                        </div>
+                    </div>
+                </section>
+
+            </main>
         </div>
     </div>
 </body>
