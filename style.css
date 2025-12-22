@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap");
 
+/* RESET */
 * {
     margin: 0;
     padding: 0;
@@ -7,16 +8,19 @@
     font-family: 'Poppins', sans-serif;
 }
 
+/* BODY */
 body {
     background-color: #192f39;
     min-height: 100vh;
+    display: flex;
+    justify-content: center;
 }
 
+/* MAIN CONTAINER */
 .container {
     width: 100%;
-    max-width: 1500px;
+    max-width: 1200px;
     min-height: 100vh;
-    margin: 0 auto;
     background: #fff;
     display: grid;
     grid-template-columns: 1fr 2fr;
@@ -57,7 +61,6 @@ body {
     margin-top: 20px;
     text-transform: uppercase;
     text-align: center;
-    font-weight: 600;
 }
 
 .profileText h2 span {
@@ -65,16 +68,15 @@ body {
     font-weight: 500;
 }
 
+/* CONTACT */
 .contactinfo {
     padding-top: 30px;
     color: #fff;
 }
 
 .title {
-    color: #ffffff;
     text-transform: uppercase;
     font-weight: 600;
-    letter-spacing: 1px;
     margin-bottom: 20px;
 }
 
@@ -97,16 +99,16 @@ body {
     color: #d0d0d0;
 }
 
+/* EDUCATION */
 .contactinfo.education h5 {
     color: #2f7ab4;
-    font-weight: 600;
 }
 
 .contactinfo.education h4 {
     color: #fff;
-    font-weight: 500;
 }
 
+/* LANGUAGE BAR */
 .contactinfo.lang .percent {
     width: 100%;
     height: 5px;
@@ -121,19 +123,18 @@ body {
 
 /* RIGHT SIDE */
 .right_Side {
-    background: #fff;
     padding: 40px;
     border: 2px solid #52528a;
 }
 
+/* COMMON */
 .about {
-    margin-bottom: 25px;
+    margin-bottom: 28px;
 }
 
 .title2 {
     color: rgb(27, 75, 134);
     text-transform: uppercase;
-    letter-spacing: 1px;
     margin-bottom: 12px;
 }
 
@@ -155,14 +156,9 @@ body {
 .about .text h4 {
     color: #21518d;
     font-size: 13px;
-    margin-bottom: 6px;
 }
 
 /* SCROLL SECTION */
-.work-scroll {
-    margin-top: 10px;
-}
-
 .work-scroll-content {
     max-height: 520px;
     overflow-y: auto;
@@ -185,7 +181,6 @@ body {
 
 .work-scroll .box {
     background: #fff;
-    border: 1px solid rgba(0, 0, 0, 0.08);
     border-radius: 14px;
     padding: 16px;
     box-shadow: 0 10px 22px rgba(0, 0, 0, 0.06);
@@ -243,12 +238,41 @@ body {
 }
 
 /* RESPONSIVE */
-@media (max-width: 900px) {
+@media (max-width: 1024px) {
+    .container {
+        grid-template-columns: 1fr 1.6fr;
+    }
+}
+
+@media (max-width: 768px) {
     .container {
         grid-template-columns: 1fr;
+        max-width: 100%;
+        box-shadow: none;
+    }
+
+    .left_Side {
+        text-align: center;
+        border-bottom: 2px solid #52528a;
+    }
+
+    .profileText .imgBx {
+        width: 160px;
+        height: 160px;
+    }
+
+    .hobby ul {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .skills .box {
+        grid-template-columns: 1fr;
+        gap: 6px;
     }
 
     .work-scroll-content {
-        max-height: 60vh;
+        max-height: 65vh;
     }
 }
