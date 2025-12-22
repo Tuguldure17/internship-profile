@@ -291,3 +291,107 @@ p {
     box-shadow: 0 10px 22px rgba(30, 79, 154, 0.45);
     background: linear-gradient(135deg, #163c75, #25639a);
 }
+
+.github-link {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.github-link:hover {
+    color: #d0d0d0;
+}
+
+.work-scroll {
+    margin-top: 10px;
+}
+
+.work-scroll-content {
+    max-height: 520px;
+    overflow-y: auto;
+    padding-right: 10px;
+    scroll-behavior: smooth;
+}
+
+.work-scroll-content::-webkit-scrollbar {
+    width: 8px;
+}
+
+.work-scroll-content::-webkit-scrollbar-thumb {
+    border-radius: 12px;
+    background: rgba(30, 95, 163, 0.75);
+}
+
+.work-scroll-content::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0.06);
+    border-radius: 12px;
+}
+
+.work-scroll .box {
+    background: #ffffff;
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    border-radius: 14px;
+    padding: 14px 16px;
+    margin: 14px 0;
+    box-shadow: 0 10px 22px rgba(0, 0, 0, 0.06);
+}
+
+.work-scroll .year_company h5 {
+    line-height: 1.2;
+}
+
+.work-scroll .text h4 {
+    margin-bottom: 8px;
+    line-height: 1.35;
+}
+
+.grade-btn {
+    display: inline-block;
+    margin-top: 8px;
+    padding: 10px 14px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: 600;
+    border: 1px solid rgba(30, 95, 163, 0.35);
+    color: #1e5fa3;
+    background: rgba(30, 95, 163, 0.08);
+    transition: 0.2s ease;
+}
+
+.grade-btn:hover {
+    transform: translateY(-1px);
+    background: rgba(30, 95, 163, 0.14);
+}
+
+.lab-list {
+    margin-top: 10px;
+    padding-left: 18px;
+}
+
+.lab-list>li {
+    margin: 10px 0 14px;
+    line-height: 1.55;
+}
+
+.sub-list {
+    margin-top: 10px;
+    padding-left: 18px;
+}
+
+.sub-list li {
+    margin: 8px 0;
+    line-height: 1.55;
+}
+
+.work-scroll a {
+    word-break: break-word;
+}
+
+@media (max-width: 900px) {
+    .work-scroll .box {
+        padding: 12px 12px;
+    }
+
+    .work-scroll-content {
+        max-height: 60vh;
+    }
+}
