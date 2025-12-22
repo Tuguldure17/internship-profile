@@ -244,6 +244,29 @@ body {
     }
 }
 
+.contactinfo ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+
+
+
+
+
+
+
+
+.contactinfo ul li i {
+    min-width: 20px;
+    font-size: 16px;
+    color: #4fa3ff;
+    /* тод цэнхэр */
+}
+
+
+
+
 @media (max-width: 768px) {
     .container {
         grid-template-columns: 1fr;
