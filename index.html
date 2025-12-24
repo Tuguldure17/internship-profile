@@ -15,7 +15,18 @@
     <link rel="stylesheet" href="./style.css">
 </head>
 
+
+
+
+
 <body>
+    <!-- TRANSCRIPT MODAL -->
+    <div id="transcriptModal" class="modal-overlay">
+        <div class="modal-content">
+            <button class="modal-close" id="closeTranscript">&times;</button>
+            <img src="./img/22B1NUM7303_page-0001.jpg" frameborder="0"></iframe>
+        </div>
+    </div>
     <div class="page-wrapper">
         <div class="cv-container">
 
@@ -163,7 +174,6 @@
                     <div class="about-text">
                         <p>Би МУИС-ийн Программ хангамжийн чиглэлээр суралцдаг оюутан бөгөөд программ хангамж Front-end,
                             Back-end чиглэлээр дадлага (internship) хийх газар, боломж хайж байна.</p>
-                        <p>Мэргэжлийн хичээлүүдээ ихэнхийн амжилттай үзсэн.</p>
                     </div>
                 </section>
 
@@ -176,7 +186,7 @@
                     <div class="strengths-grid">
                         <div class="strength-card">
                             <div class="strength-icon"><i class="fa-brands fa-github"></i></div>
-                            <p>GitHub ашиглан бага хэмжээний төслүүдийг хамтран хөгжүүлсэн</p>
+                            <p>GitHub ашиглах</p>
                         </div>
                         <div class="strength-card">
                             <div class="strength-icon"><i class="fa-solid fa-users"></i></div>
@@ -213,18 +223,15 @@
 
                         <h3 class="work-title">Дүнгийн тодорхойлолт</h3>
                         <p class="work-period">2022-2023 Намараас 2024-2025 Хавар хүртэл үзсэн хичээлийн дүн</p>
-                        <a href="./index_dun.html" class="modern-btn">
+                        <button class="modern-btn" id="openTranscript">
                             <span>Дүн харах</span>
                             <i class="fa-solid fa-arrow-right"></i>
-                        </a>
+                        </button>
                     </div>
-
-
-
                     <!-- LAB WORK -->
                     <div class="work-card">
                         <div class="card-badge">Лабораторийн ажил</div>
-                        <h3 class="work-title">Лабораторийн хүрээнд гүйцэтгэсэн ажлууд</h3>
+                        <h3 class="work-title">Лабораторийн хүрээнд гүйцэтгэсэн жижиг төсөлүүд</h3>
                         <p class="work-period">2022–2026</p>
 
                         <div class="lab-section">
@@ -318,6 +325,42 @@
             </main>
         </div>
     </div>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const openBtn = document.getElementById("openTranscript");
+            const modal = document.getElementById("transcriptModal");
+            const closeBtn = document.getElementById("closeTranscript");
+
+            let hoverTimeout;
+
+            openBtn.addEventListener("mouseenter", () => {
+                hoverTimeout = setTimeout(() => {
+                    modal.classList.add("active");
+                }, 200);
+            });
+
+            openBtn.addEventListener("mouseleave", () => {
+                clearTimeout(hoverTimeout);
+                setTimeout(() => {
+                    if (!modal.matches(":hover")) {
+                        modal.classList.remove("active");
+                    }
+                }, 100);
+            });
+            modal.addEventListener("mouseenter", () => {
+                modal.classList.add("active");
+            });
+
+            modal.addEventListener("mouseleave", () => {
+                modal.classList.remove("active");
+            });
+            closeBtn.addEventListener("click", () => {
+                modal.classList.remove("active");
+            });
+        });
+    </script>
+
+
 </body>
 
 </html>
